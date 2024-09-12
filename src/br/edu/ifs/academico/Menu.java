@@ -22,6 +22,8 @@ public class Menu {
 		System.out.println("10. Imprimir Lista Psicologos");
         System.out.println("11. Cadastrar Tecnico");
 		System.out.println("12. Imprimir Lista Tecnicos");
+        System.out.println("13. Cadastrar Vigilante");
+		System.out.println("14. Imprimir Lista Vigilantes");
 		System.out.println("0. Sair");
 	}
 
