@@ -14,6 +14,8 @@ public class Menu {
 		System.out.println("2. Imprime Lista Alunos");
 		System.out.println("3. Cadastrar Professor");
 		System.out.println("4. Imprimir Lista Professores");
+        System.out.println("13. Cadastrar Merendeira");
+		System.out.println("14. Imprimir Lista Merendeiras");
 		System.out.println("0. Sair");
 	}
 
