@@ -18,6 +18,8 @@ public class Menu {
 		System.out.println("6. Imprimir Lista Merendeiras");
         System.out.println("7. Cadastrar Pedagogo");
 		System.out.println("8. Imprimir Lista Pedagogos");
+        System.out.println("9. Cadastrar Psicologo");
+		System.out.println("10. Imprimir Lista Psicologos");
 		System.out.println("0. Sair");
 	}
 
