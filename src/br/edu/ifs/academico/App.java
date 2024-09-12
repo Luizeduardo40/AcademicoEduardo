@@ -1,5 +1,6 @@
 package br.edu.ifs.academico;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 //Classe executavel App
 public class App {
@@ -19,6 +20,15 @@ public class App {
         String dataNascimento;
         String localNascimento;
         char sexo;
+
+        //Iniciando ArrayLists
+        ArrayList<Aluno> listaAluno = new ArrayList<>();
+        ArrayList<Professor> listaProfessor = new ArrayList<>();
+        ArrayList<Merendeira> listaMerendeira = new ArrayList<>();
+        ArrayList<Pedagogo> listaPedagogo = new ArrayList<>();
+        ArrayList<Psicologo> listaPsicologo = new ArrayList<>();
+        ArrayList<Tecnico> listaTecnico = new ArrayList<>();
+        ArrayList<Vigilante> listaVigilante = new ArrayList<>();
 
         //Iniciando loop
         while(repete) {
@@ -44,6 +54,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     aluno.setSexo(sexo);
+
+                    listaAluno.add(aluno);
                     
                     break;
 
@@ -68,6 +80,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     professor.setSexo(sexo);
+
+                    listaProfessor.add(professor);
                 
                     break;
 
@@ -91,6 +105,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     merendeira.setSexo(sexo);
+
+                    listaMerendeira.add(merendeira);
                     
                     break;
 
@@ -114,6 +130,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     pedagogo.setSexo(sexo);
+
+                    listaPedagogo.add(pedagogo);
                     
                     break;
 
@@ -137,6 +155,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     psicologo.setSexo(sexo);
+
+                    listaPsicologo.add(psicologo);
                     
                     break;
 
@@ -160,6 +180,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     tecnico.setSexo(sexo);
+
+                    listaTecnico.add(tecnico);
                     
                     break;
 
@@ -183,6 +205,8 @@ public class App {
                     System.out.println("Sexo: ");
                     sexo = leia.next().charAt(0);
                     vigilante.setSexo(sexo);
+
+                    listaVigilante.add(vigilante);
                     
                     break;
 
