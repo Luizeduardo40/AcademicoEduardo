@@ -7,6 +7,10 @@ public class Professor extends Pessoa {
     private String formacao;
     private boolean coordenador;
 
+    public Professor(String nome) {
+        super(nome);
+    }
+
     //Encapsulando atributos
     public String getFormacao() {
         return formacao;

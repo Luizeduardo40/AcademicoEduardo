@@ -8,6 +8,10 @@ public class Psicologo extends Pessoa {
     private String especialidade;
     private String alocacao;
 
+    public Psicologo(String nome) {
+        super(nome);
+    }
+
     //Encapsulando atributos
     public String getCrp() {
         return crp;

@@ -7,6 +7,10 @@ public class Pedagogo extends Pessoa {
     private String experiencia;
     private String faixaClasse;
 
+    public Pedagogo(String nome) {
+        super(nome);
+    }
+
     //Encapsulando atributos
     public String getExperiencia() {
         return experiencia;

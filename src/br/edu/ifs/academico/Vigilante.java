@@ -7,6 +7,10 @@ public class Vigilante extends Pessoa {
     private boolean armado;
     private String horario;
 
+    public Vigilante(String nome) {
+        super(nome);
+    }
+
     //Encapsulando atributos
     public boolean getArmado() {
         return armado;

@@ -7,6 +7,10 @@ public class Merendeira extends Pessoa {
     private String especialidade;
     private String vulgo;
 
+    public Merendeira(String nome) {
+        super(nome);
+    }
+
     //Encapsulando atributos
     public String getEspecialidade() {
         return especialidade;

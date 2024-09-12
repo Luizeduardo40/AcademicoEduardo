@@ -8,6 +8,10 @@ public class Tecnico extends Pessoa {
     private String laboratorio;
     private int sala;
 
+    public Tecnico(String nome) {
+        super(nome);
+    }
+
     //Encapsulando atributos
     public String getProfissao() {
         return profissao;

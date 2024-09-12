@@ -7,6 +7,10 @@ public class Aluno extends Pessoa {
     private double nota1;
     private double nota2;
 
+    public Aluno(String nome) {
+        super(nome);
+    }
+
     //Encapsulamento de atributos
     public double getNota1() {
         return nota1;

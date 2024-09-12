@@ -9,6 +9,10 @@ public class Pessoa {
     private String localNascimento;
     private char sexo;
 
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
     //Encapsulando atributos
     public String getNome() {
         return nome;
