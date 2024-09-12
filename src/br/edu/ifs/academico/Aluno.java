@@ -1,10 +1,13 @@
 package br.edu.ifs.academico;
 
+//Classe Aluno que herda de Pessoa
 public class Aluno extends Pessoa {
 
+    //Iniciando atributos de Aluno
     private double nota1;
     private double nota2;
 
+    //Encapsulamento de atributos
     public double getNota1() {
         return nota1;
     }

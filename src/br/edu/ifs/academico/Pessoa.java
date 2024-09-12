@@ -1,12 +1,15 @@
 package br.edu.ifs.academico;
 
+//Classe base Pessoa
 public class Pessoa {
 
+    //Iniciando atributos de Pessoa
     private String nome;
     private String dataNascimento;
     private String localNascimento;
     private char sexo;
 
+    //Encapsulando atributos
     public String getNome() {
         return nome;
     }
