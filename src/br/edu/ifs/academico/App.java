@@ -2,13 +2,14 @@ package br.edu.ifs.academico;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+import br.edu.ifs.academico.business.AlunoBusiness;
+import br.edu.ifs.academico.business.ProfessorBusiness;
+
 //Classe executavel App
 public class App {
 
     public static void main(String[] args) {
 
-        //Iniciando variaveis para Menu e Scanner
-        Menu menu = new Menu();
         Scanner leia = new Scanner(System.in);
 
         //Iniciando variaveis do loop
@@ -33,59 +34,28 @@ public class App {
         //Iniciando loop
         while(repete) {
             
-            menu.imprimirMenu();
-            leia.nextInt();
+            Menu.imprimirMenu();
+            escolha = leia.nextInt();
 
             switch (escolha) {
                 case 1:
-                    System.out.println("Nome: ");
-                    nome = leia.next();
-
-                    Aluno aluno = new Aluno(nome);
-
-                    System.out.println("Data de Nascimento: ");
-                    dataNascimento = leia.next();
-                    aluno.setDataNascimento(dataNascimento);
-
-                    System.out.println("Local de Nascimento: ");
-                    localNascimento = leia.next();
-                    aluno.setLocalNascimento(localNascimento);
-
-                    System.out.println("Sexo: ");
-                    sexo = leia.next().charAt(0);
-                    aluno.setSexo(sexo);
-
-                    listaAluno.add(aluno);
-                    
+                    AlunoBusiness alunoBusiness = new AlunoBusiness();
+                    listaAluno.add(alunoBusiness.cadastrarAluno());
                     break;
 
                 case 2:
-
+                    System.out.println("Lista Alunos");
+                    System.out.println(listaAluno.toString());
                     break;
 
                 case 3:
-                    System.out.println("Nome: ");
-                    nome = leia.next();
-
-                    Professor professor = new Professor(nome);
-
-                    System.out.println("Data de Nascimento: ");
-                    dataNascimento = leia.next();
-                    professor.setDataNascimento(dataNascimento);
-
-                    System.out.println("Local de Nascimento: ");
-                    localNascimento = leia.next();
-                    professor.setLocalNascimento(localNascimento);
-
-                    System.out.println("Sexo: ");
-                    sexo = leia.next().charAt(0);
-                    professor.setSexo(sexo);
-
-                    listaProfessor.add(professor);
-                
+                    ProfessorBusiness professorBusiness = new ProfessorBusiness();
+                    listaProfessor.add(professorBusiness.cadastrarProfessor());
                     break;
 
                 case 4:
+                    System.out.println("Lista Professores");
+                    System.out.println(listaProfessor.toString());
                     break;
 
                 case 5:

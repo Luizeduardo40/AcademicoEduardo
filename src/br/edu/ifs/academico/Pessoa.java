@@ -46,4 +46,10 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
+    @Override
+    public String toString() {
+        return "nome = " + nome + ", Data de Nascimento = " + dataNascimento + ", Local de Nascimento = " + 
+        localNascimento + ", Sexo = " + sexo;
+    }
+
 }

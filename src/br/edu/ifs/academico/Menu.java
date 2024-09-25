@@ -1,10 +1,10 @@
 package br.edu.ifs.academico;
 
 //Classe Menu
-public class Menu {
+public abstract class Menu {
 
     //Exibe o menu na tela
-    public void imprimirMenu() {
+    public static void imprimirMenu() {
 		
 		System.out.println("Sistema Acadamico IFS");
 		System.out.println("        Menu");

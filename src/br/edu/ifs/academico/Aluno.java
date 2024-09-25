@@ -28,4 +28,9 @@ public class Aluno extends Pessoa {
         this.nota2 = nota2;
     }
 
+    @Override
+    public String toString() {
+        return "Aluno = [ " + super.toString() + " ]";
+    }
+
 }
